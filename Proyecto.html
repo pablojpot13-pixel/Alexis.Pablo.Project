@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+
+    <h1>Update form</h1>
+<Form>
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <p>
+                <label for="name">Full Name:</label>
+                <input type="text" placeholder="Juan Pablo Ortiz Tabares" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="email@example.com" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="password">Password (max 12c.):</label>
+                <input type="password" placeholder="Password" id="password" name="password" maxlength="12" required>
+            </p>
+
+            <p>
+                <label for="age">Age(18-99):</label>
+                <input type="number" id="age" name="age" min="18" max="99">
+            </p>
+
+            <p>
+                <label for="date">Date Of Birth:</label>
+                <input type="date" id="date" name="date">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <p>Gender:
+                <input type="radio" id="masc" name="gender">
+                <label for="masc">Male</label>
+                
+                <input type="radio" id="fem" name="gender">
+                <label for="fem">Female</label>
+                
+                <input type="radio" id="otro" name="gender">
+                <label for="Other">Other</label>
+            </p>
+
+            <p>Interests:
+                <input type="checkbox" id="sports" name="Interests">
+                <label for="Sports">Sports</label>
+                
+                <input type="checkbox" id="tecno" name="Interests">
+                <label for="tecno">Tecnology</label>
+                
+                <input type="checkbox" id="art" name="Interests">
+                <label for="art">Art</label>
+                
+                <input type="checkbox" id="music" name="Interests">
+                <label for="music">Music</label>
+                
+                <input type="checkbox" id="travel" name="Interests">
+                <label for="travel">Travel</label>
+            
+                 
+                <input type="checkbox" id="travel" name="Interests">
+                <label for="Other">Other</label>
+            </p>
+        
+
+            <p>
+                <label for="country">Country of residence:</label>
+                <select id="country" name="country">
+                    <option value="">Select a Country</option>
+                    <option value="co">Colombia</option>
+                    <option value="br">Brazil</option>
+                    <option value="ge">Germany</option>
+                    <option value="en">England</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional comments</legend>
+            <p>
+                <label for="comments">Suggestions or additional information:</label><br><br>
+                <textarea id="comments" name="comments"placeholder="Write in this part..."></textarea>
+            </p>
+        </fieldset>
+          
+        <p>Actions:
+        
+             <button type="submit">Submit Form</button>
+             <button type="reset">Reset</button>
+             <button type="help">Show help</button>
+         </p>    
+        
+</form>
+
+</body>
+</html>
