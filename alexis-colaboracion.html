@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro Académico</title>
+</head>
+
+<body>
+
+    <h1>Formulario de Registro de Usuario</h1>
+
+    <form action="enviar la informacion "></form>
+
+    <fieldset>
+        <legend>Datos Personales</legend>
+
+        <p>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </p>
+
+        <p>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="password">Contraseña (máx. 12 caracteres):</label>
+            <input type="password" id="password" name="password" maxlength="12" required>
+        </p>
+
+        <p>
+            <label for="edad">Edad (18-99):</label>
+            <input type="number" id="edad" name="edad" min="18" max="99">
+        </p>
+
+        <p>
+            <label for="fecha_nac">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nac" name="fecha_nac">
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferencias</legend>
+
+        <p>Género:
+            <input type="radio" id="masc" name="genero">
+            <label for="masc">Masculino</label>
+
+            <input type="radio" id="fem" name="genero">
+            <label for="fem">Femenino</label>
+
+            <input type="radio" id="otro" name="genero">
+            <label for="otro">Otro</label>
+        </p>
+
+        <p>
+            Intereses:
+            <input type="checkbox" id="musica" name="intereses">
+            <label for="musica">Música</label>
+
+            <input type="checkbox" id="deportes" name="intereses">
+            <label for="deportes">Deportes</label>
+
+            <input type="checkbox" id="viajes" name="intereses">
+            <label for="viajes">Viajes</label>
+
+            <input type="checkbox" id="tecno" name="intereses">
+            <label for="tecno">Tecnología</label>
+
+            <input type="checkbox" id="arte" name="intereses">
+            <label for="arte">Arte</label>
+        </p>
+
+        <p>
+            <label for="pais">País de residencia:</label>
+            <select id="pais" name="pais">
+                <option value="">Selecciona un país</option>
+                <option value="co">Colombia</option>
+                <option value="mx">México</option>
+                <option value="es">España</option>
+                <option value="ar">Argentina</option>
+            </select>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Comentarios adicionales</legend>
+        <p>
+            <label for="comentarios">Sugerencias o información extra:</label><br><br>
+            <textarea id="comentarios" name="comentarios" placeholder="Escribe aquí..."></textarea>
+        </p>
+    </fieldset>
+    <p>
+        <button type="submit">Enviar formulario</button>
+        <button type="reset">Limpiar todos los campos</button>
+        <button type="ayuda">soporte tecnico</button>
+    </p>
+    <form action="/enviar-calificacion" method="post">
+        <label for="servicio">Califica nuestro servicio:</label>
+        <select name="servicio" id="servicio" required>
+            <option value="">Selecciona una opción</option>
+            <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+            <option value="4">⭐⭐⭐⭐ Muy bueno</option>
+            <option value="3">⭐⭐⭐ Bueno</option>
+            <option value="2">⭐⭐ Regular</option>
+            <option value="1">⭐ Malo</option>
+        </select>
+        <br><br>
+        <button type="submit">Enviar Calificación</button>
+    </form>
+
+    </form>
+</body>
+
+</html>
